@@ -6,7 +6,6 @@
     "mcversion": "${mcversion}",
     "authorList": [
       "Latibro"
-    ],
-    "dependencies": []
+    ]
   }
 ]
