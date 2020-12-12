@@ -1,6 +1,7 @@
 package latibro.poc.proxy;
 
 import latibro.poc.ModBlocks;
+import latibro.poc.block.FacingBlock;
 import latibro.poc.block.SimpleBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -27,11 +28,13 @@ public class CommonProxy {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new SimpleBlock());
+        event.getRegistry().register(new FacingBlock());
     }
 
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new ItemBlock(ModBlocks.simpleBlock).setRegistryName(ModBlocks.simpleBlock.getRegistryName()));
+        event.getRegistry().register(new ItemBlock(ModBlocks.facingBlock).setRegistryName(ModBlocks.facingBlock.getRegistryName()));
     }
 
 }

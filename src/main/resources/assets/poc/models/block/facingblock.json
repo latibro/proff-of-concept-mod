@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "poc:blocks/facingblock_front",
+    "down": "poc:blocks/facingblock_down",
+    "up": "poc:blocks/facingblock_up",
+    "east": "poc:blocks/facingblock_left",
+    "west": "poc:blocks/facingblock_right",
+    "north": "poc:blocks/facingblock_front",
+    "south": "poc:blocks/facingblock_back"
+  }
+}
